@@ -1,0 +1,9 @@
+.Home{
+
+position: relative;
+display: grid;
+grid-template-columns: 18rem  auto 20rem; /* This will create 3 columns of respective lenght 18,what is left of space (from 1st &3rd) in middle,20  3rd column */
+gap:1rem; /* this will leave space 1rem between each column*/
+
+
+}/* */
