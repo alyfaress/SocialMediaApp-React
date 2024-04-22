@@ -1,0 +1,40 @@
+.FollowersCard{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 13px;/*make fontsize small inorder not to get out to the second line in  div*/
+width: 100%;
+    border-radius: 0.7rem;
+    
+}
+.follower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.follower>div{
+    display: flex;
+    gap: 10px;
+}
+.followerImage{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;/*imp,delete it to know ots importance*/
+}
+
+.name>span:nth-of-type(1){
+    font-weight: bold;
+}
+.fc-button{
+ height: 2rem;
+ padding-left: 20px;/* padding left and right to enlarge button's width*/
+ padding-right: 20px;
+    
+}

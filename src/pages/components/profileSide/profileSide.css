@@ -1,0 +1,7 @@
+.profileSide{
+    display: flex;/*its important to make flex in profileside since all parent elem.. will separated by each other by the gap,and by this we make space bwteen logosearch and card*/
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    overflow: auto;
+}

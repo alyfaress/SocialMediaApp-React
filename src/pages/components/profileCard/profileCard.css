@@ -1,0 +1,80 @@
+/*All whats in the card are below each other,so they are in column,so let flex-direction:column*/
+.ProfileCard{
+  border-radius:20px;/*to make  edges of the card rounded + imp to make topright and topleft of image rounded in cover imageimg:nth-child(1) */ 
+display: flex;
+flex-direction: column;
+position: relative;
+gap: 1rem;
+background: var(--cardColor);/*make back ground of whole card white*/
+}
+
+.ProfileImages{
+    display: flex;
+    flex-direction: column;/*this will make photos fit in cardside width,and below each other*/
+    position: relative;
+    align-items: center;/*this will make all whta in this div(2 images) in the center,this is very imp and beneficial,better than centering 2nd img by padding-lef:5.5rem*/
+    
+}
+.ProfileImages>img:nth-child(1){
+width: 100%;/*img will occupy ful div of class= profileImages,and equal to width of profilecard */
+border-radius: 20px 20px 0px 0px;/*V.imp:i figured it out,this is how to make topright nad topleft edges of photot rounded*/
+}
+.ProfileImages>img:nth-child(2){
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;/*make img of round shape*/
+    position: absolute;/*we useto make it relative to the div of classs=profileimages, img location starts from top pf profileimages as we want to place it in middle of 1st img,in relative image cannot be on top of another img it will respect its space and stay beside it only*/
+    bottom: -3rem;/*since height=6,and we want to place it in the middle of it so bottom=3*/
+    box-shadow: var(--profileShadow);
+}
+.ProfileName{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;/*to make space bwteen profilesimages and profilename containing the 2 spans*/
+    gap: 10px;/*space between elements inside profilename (between the 2 spans)*/
+}
+.ProfileName>:nth-child(1){
+font-weight: bold;
+
+}
+.followStatus>hr{
+ width: 85%;
+    border: 1px solid var(--hrColor);
+  }
+  .followStatus>div{
+
+    display: flex;/* since all divs in followStatus are selected(since we didnt specify which div to select), so:  all what in  divs of classes :follow,follow,vl... will be arranges next to each other by flex*/
+    justify-content: space-around;/*make space before(so there will not start with no indintation,sticked to the screen) and after div*/
+    align-items: center;/*to apply space before div close to screen*/
+    margin: 20px 22px;  
+}
+.follow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;/*space inside columns(title and its number underneath it */
+    align-items: center;
+    
+  }
+  .follow > span:nth-child(1) {
+    
+    color: var(--gray);
+  }
+  
+  .follow > span:nth-child(2) {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .vl {
+    height: 50px;
+    border-left: 3px solid var(--hrColor);
+  }
+  .ProfileCard>span{
+    font-weight: bold;
+    color: orange;
+    align-self: center;/*to place one item in center use "align-self" not align-item*/
+    margin-bottom: 1rem;
+    cursor: pointer;
+}

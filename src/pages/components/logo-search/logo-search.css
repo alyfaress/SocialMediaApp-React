@@ -1,0 +1,28 @@
+.LogoSearch{
+display: flex;/*this will arrange all (parent)divs inside div of class"LogoSearch" nexttoeach other,there are 2(img & search)*/
+gap: 0.75rem;
+}
+.search{/* icon in div of class"search" will not we arranged with flex since its a child elem inside the flexed parent ,so
+           set flex inside class containing it to apply flex arrangement*/
+           display: flex;
+           background-color: var(--inputColor);/*div conataining input & icon background will be changed*/
+           border-radius: 10px;
+           padding: 5px;
+}
+.search>input{
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.s-icon{
+
+    display: flex;
+    background: linear-gradient(106.23deg, #f99827, #f95f35 100%);
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+.s-icon:hover{/*when pressed mouse truns into pointer */
+    cursor: pointer;
+}

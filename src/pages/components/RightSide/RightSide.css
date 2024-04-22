@@ -1,0 +1,16 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navIcons{
+display: flex;
+justify-content: space-between;
+align-items: center;/*this will make them centered on the same straight line*/
+margin-top: 0.5rem;
+}
+.navIcons>img{/*this will target all icons in navIcons as all icons are img,making them all of same width and height is V.v.imp for beauty of view*/
+    width: 1.5rem;
+    height: 1.5rem;
+}

@@ -1,0 +1,26 @@
+.Post{
+    
+    background-color: var(--cardColor);
+    display: flex;
+    flex-direction: column;/* this is to arrange all parent elemnts under each other,
+      we left  img  alone and gave postreact a class and class for postdetails ,since we want each of them tobe a parent element and hence they'll be arranged by flex ,*/
+    gap: 1rem;/*makes space btw elements in same post(img,postreact,details*/
+    margin-top:2rem ;/*this will give post space under it ,so thats how we leave space btween posts*/
+    border-radius: 1rem;
+    padding: 10px;/*imp:inoder to keep sapace between content of the post (img &text) and beggining of the div*/
+  }
+.Post>img{
+  width:100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;/*this is imp. so that img has rounded edge*/
+}
+.postReact{
+display: flex;
+align-items: flex-start;
+gap: 1rem;
+
+}/*remove scrollbar in App.css by:
+::-webkit-scrollbar{
+  display: none;
+}*/
